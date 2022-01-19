@@ -439,6 +439,8 @@ textarea {
   fill: currentColor;
 }
 
+/* Бекдроп */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -459,6 +461,9 @@ textarea {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
 }
+
+/* Модалка */
+
 .modal {
   position: absolute;
   top: 50%;
@@ -471,6 +476,8 @@ textarea {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--transition-duration) var(--transition-timing-function);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .modal-button {
@@ -491,24 +498,76 @@ textarea {
 .modal-form {
 }
 
+.form-header {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--primary-black-color);
+  margin-bottom: 12px;
+}
+
 .form-field {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field + .form-field {
+  margin-top: 10px;
 }
 
 .form-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  margin-bottom: 4px;
 }
 
 .form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.form-input.feedback {
+  height: 120px;
+  padding: 12px 16px;
 }
 
 .label-agreement {
   line-height: 1.71;
 }
 
+.form-btn {
+  width: 200px;
+  height: 50px;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 55px 10px 56px;
+  cursor: pointer;
+}
+
+.form-input::placeholder {
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+input[type='checkbox'] {
+  width: 16px;
+  height: 15px;
+}
 /* Футер */
 
 .footer-section {
