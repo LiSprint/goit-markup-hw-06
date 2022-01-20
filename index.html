@@ -502,14 +502,23 @@
             <div class="form-field">
               <label class="form-label" for="name">Имя</label>
               <input class="form-input" type="text" name="name" id="name" />
+              <svg class="modal-form-icon" height="18" width="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label class="form-label" for="phone">Телефон </label>
               <input class="form-input" type="tel" name="phone" id="phone" />
+              <svg class="modal-form-icon" height="18" width="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label class="form-label" for="email">Почта</label>
               <input class="form-input" type="email" name="email" id="email" />
+              <svg class="modal-form-icon" height="18" width="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label class="form-label" for="feedback">Комментарий</label>
@@ -617,13 +626,20 @@
         </div>
         <div class="footer-form">
           <h2 class="footer-signup">Подпишитесь на рассылку</h2>
-          <input
-            class="footer-input"
-            type="email"
-            name="email-signup"
-            placeholder="E-mail"
-          />
-          <button class="footer-btn" type="submit">Подписаться</button>
+          <div class="footer-signup-wrap">
+            <input
+              class="footer-input"
+              type="email"
+              name="email-signup"
+              placeholder="E-mail"
+            />
+            <button class="footer-btn" type="submit">
+              Подписаться
+              <svg class="footer-send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
