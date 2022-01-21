@@ -564,6 +564,9 @@ textarea {
   border: none;
   padding: 10px 55px 10px 56px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .form-input::placeholder {
@@ -577,12 +580,46 @@ textarea {
   position: absolute;
   left: 12px;
   top: 50%;
+  /* color: inherit; */
+}
+
+.form-input:focus > .modal-form-icon {
+  border: var(--accent-color);
 }
 
 input[type="checkbox"] {
   width: 16px;
   height: 15px;
 }
+
+.agreement-field {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.agreement-terms {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+}
+
+.checkbox {
+  appearance: none;
+}
+
+.checkbox:checked + .icon-checked {
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.icon-checked {
+  margin-right: 7px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
 /* Футер */
 
 .footer-section {
